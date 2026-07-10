@@ -4,37 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="update.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="navbar">
-    <img src="Assets/Images/logo.png" class="logo" alt="work brand">
-    <ul>
-      <li> <a href="#home">Home</a></li>
+  <div class="bg-orb orb-1"></div>
+<div class="bg-orb orb-2"></div>
+<div class="bg-orb orb-3"></div>
+<div class="bg-orb orb-4"></div>
+
+<div class="stage">
+  <nav>
+    <div class="logo">STEV<span class="dot">.</span></div>
+    <ul class="nav-links">
+       <li> <a class="active" href="#home">Home</a></li>
       <li> <a href="#about">About</a></li>
       <li> <a href="#skills">Skills</a></li>
       <li> <a href="#projects">Projects</a></li>
       <li> <a href="#experience">Experience</a></li>
-      <li> <a href="#contact">Contact</a></li>
+      <!-- <li> <a href="#contact">Contact</a></li> -->
     </ul>
-  </div>
+    <a class="cta-btn" href="#contact">Let's talk</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-  <section class="container" id="home">
-      <div class ="profile">
-        <img src="Assets/Images/Edited hero.png" class="picture" alt="profile picture">
-      </div>
-      <div class="name">
-        <h1>I am Stephen Akwasi Fobi.<br>A frontend developer and aspiring software engineer</h1>
-        <div class="socials">
-          <span>Let's Connect</span>
-          <a href="https://www.linkedin.com/in/stephen-akwasi-fobi-402953348?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="social_icon"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Stephen473" target="_blank" rel="noopener" class="social_icon"><i class="fab fa-github"></i></a>
-          <a href="https://www.facebook.com/share/18uAG2yUoQ/" target="_blank" rel="noopener" class="social_icon"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/fobi_stephen?utm_source=qr&igsh=NTd4aWJ3eGplZDc2" target="_blank" rel="noopener" class="social_icon"><i class="fab fa-instagram"></i></a>
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <div class="deco deco-ring"></div>
+      <div class="deco deco-ball"></div>
+      <p class="eyebrow">Hello, I'm</p>
+      <h1 class="name">STEPHEN<br><span class="accent"></span></h1>
+      <p class="desc">A frontend developer and aspiring software engineer.</p>
+      <div class="contact-row">
+        <div class="email-pill">fobistephen@gmail.com</div>
+        <div class="icon-row">
+          <a href="https://www.linkedin.com/in/stephen-akwasi-fobi-402953348?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="icon-btn primary" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Stephen473" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/share/18uAG2yUoQ/" target="_blank" rel="noopener" class="icon-btn" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/fobi_s4wtephen?utm_source=qr&igsh=NTd4aWJ3eGplZDc2" target="_blank" rel="noopener" class="icon-btn" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
       </div>
+    </div>
+
+    <div class="hero-image-wrap">
+      <div class="hero-glow"></div>
+      <img src="Assets/Images/hero-image.png" alt="Portrait of Stephen Akwasi Fobi">
+    </div>
+
+    <div class="skill-stack">
+      <div class="skill-card">
+        <div class="connector"></div>
+        <div class="mock code"><div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div></div>
+        <div class="skill-label">Software Engineer</div>
+      </div>
+      <div class="skill-card">
+        <div class="connector"></div>
+        <div class="mock chart">
+          <div class="col col-40"></div>
+          <div class="col col-65"></div>
+          <div class="col col-50"></div>
+          <div class="col col-80"></div>
+          <div class="col col-60"></div>
+        </div>
+        <div class="skill-label">Data Analyst</div>
+      </div>
+      <div class="skill-card">
+        <div class="connector"></div>
+        <div class="mock laptop"><div class="screen"></div><div class="base"></div></div>
+        <div class="skill-label">Product Consultant</div>
+      </div>
+    </div>
   </section>
+</div>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-btn" id="closeNav" aria-label="Close menu">&times;</button>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Work</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About me</a></li>
+  </ul>
+</div>
 
   <section class="about" id="about">
     <h2>WHO AM I?</h2>
@@ -44,13 +109,7 @@
       With the world currently being driven by technology, I have developed a strong passion for programming,frontend development and software engineering.
        I am eager to learn and grow in this field, and I am excited about the opportunities that lie ahead.
     </p>
-    <div class="social">
-      <span>Connect with me</span>
-      <a href="https://www.linkedin.com/in/stephen-akwasi-fobi-402953348?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="socials_icon"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Stephen473" target="_blank" rel="noopener" class="socials_icon"><i class="fab fa-github"></i></a>
-      <a href="https://www.facebook.com/share/18uAG2yUoQ/" target="_blank" rel="noopener" class="socials_icon"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/fobi_stephen?utm_source=qr&igsh=NTd4aWJ3eGplZDc2" target="_blank" rel="noopener" class="socials_icon"><i class="fab fa-instagram"></i></a>
-    </div>
+   
   </section>
 
   <section class="skills" id="skills">
@@ -252,6 +311,40 @@
     <footer>
         <p>© 2026 Stephen Akwasi Fobi. All Rights Reserved.</p>
     </footer>
+  
   </section>
+  <script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  const closeNav = document.getElementById('closeNav');
+
+  menuToggle.addEventListener('click', () => mobileNav.classList.add('open'));
+  closeNav.addEventListener('click', () => mobileNav.classList.remove('open'));
+  mobileNav.addEventListener('click', (e) => {
+    if(e.target === mobileNav) mobileNav.classList.remove('open');
+  });
+
+  // subtle parallax on hero image & decorative shapes
+  const wrap = document.querySelector('.stage');
+  const img = document.querySelector('.hero-image-wrap img');
+  const ring = document.querySelector('.deco-ring');
+  const ball = document.querySelector('.deco-ball');
+
+  if(window.matchMedia('(pointer:fine)').matches){
+    wrap.addEventListener('mousemove', (e) => {
+      const rect = wrap.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      img.style.transform = `translate(${x*10}px, ${y*10}px)`;
+      ring.style.transform = `translate(${x*-18}px, ${y*-18}px)`;
+      ball.style.transform = `translate(${x*14}px, ${y*14}px)`;
+    });
+    wrap.addEventListener('mouseleave', () => {
+      img.style.transform = '';
+      ring.style.transform = '';
+      ball.style.transform = '';
+    });
+  }
+</script>
 </body>
 </html>
